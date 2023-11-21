@@ -6,6 +6,6 @@ RUN npm install
 
 COPY . .
 
-EXPOSE 3009
+EXPOSE $PORT
 
 CMD ["npm", "start"]
