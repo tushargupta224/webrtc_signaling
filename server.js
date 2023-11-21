@@ -18,7 +18,7 @@ if (process.argv[2] && process.argv[2] === "-ssl") {
 
 const io = require("socket.io")(server, { cors: true, origins: false });
 const signalServer = require("simple-signal-server")(io);
-const port = process.env.PORT || 3009;
+const port = process.env.PORT;
 const rooms = new Map();
 
 server.listen(port, () => {
